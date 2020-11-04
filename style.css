@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap');
+
+* {
+    font-family: 'Oxygen Mono', monospace;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url('./bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgba(255, 255, 255, .7);
+    overflow: hidden;
+}
+
+.timer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 38vh;
+}
+
+.time-container {
+    margin-top: 300px;
+    display: flex;
+    align-items: flex-end;
+    margin: 0 30px;
+    justify-content: stretch;
+    border-bottom: 3px solid rgb(255, 255, 255, .7);
+}
+
+.quantity {
+    font-size: 120px;
+    line-height: 1em;
+}
+
+.unit {
+    font-size: 25px;
+}
+
+.message {
+    margin-top: 20vh;
+    font-size: 50px;
+}
+
+@media only screen and (max-width: 1280px) {
+    .quantity {
+        font-size: 90px;
+    } 
+    .unit {
+        font-size: 20px;
+    }  
+    .message {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 1008px) {
+    .quantity {
+        font-size: 80px;
+    } 
+    .unit {
+        font-size: 18px;
+    }  
+    .message {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .quantity {
+        font-size: 50px;
+    } 
+}
+
+@media only screen and (max-width: 400px) {
+    .timer {
+        margin-top: 20vh;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .message {
+        margin-top: 10vh;
+    }
+    .time-container {
+        margin-top: 30px;
+        border-bottom: none;
+    }
+
+}
